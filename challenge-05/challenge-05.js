@@ -23,17 +23,20 @@ no primeiro parâmetro. O índice usado para retornar o valor, deve ser o númer
 segundo parâmetro.
 */
 
-
+var arraY = [1,2,3];
+   function recebeArray(x,y){
+     return arraY+''+arraY[2];
+   }
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-// ?
+var tipe = [1,1.2,'JavaScript',true, undefined];
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// ?
+recebeArray(tipe);
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
