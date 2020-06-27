@@ -52,12 +52,29 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
-
+function book(bookName){
+  var livro = {
+    naruto:{nome:"Naruto", autor:'Masashi Kishimoto',numPaginas:900},
+    dragonBall:{nome:"DragonBall",autor:"Akira Toriama",numPaginas:1200},
+    samuraiX:{nome:"Rurouni Kenshin(SamuraiX)",autor:"Nobuhiro Watsuki",numPaginas:800}
+             }
+  
+    if (bookName == "Naruto"||bookName=="naruto"){
+      return livro.naruto;
+      }
+  if (bookName =='Dragon Ball'||bookName=='dragon ball'){
+    return livro.dragonBall;
+  }
+  if (bookName == 'Samurai X'||bookName=='samurai x'){
+    return livro.samuraiX;
+  }else{
+    return livro;
+  }
+}
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
-// ?
+book();
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
