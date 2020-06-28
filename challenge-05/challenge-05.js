@@ -54,9 +54,9 @@ os livros.
 */
 function book(bookName){
   var livro = {
-    naruto:{nome:"Naruto", autor:'Masashi Kishimoto',numPaginas:900},
-    dragonBall:{nome:"DragonBall",autor:"Akira Toriama",numPaginas:1200},
-    samuraiX:{nome:"Rurouni Kenshin(SamuraiX)",autor:"Nobuhiro Watsuki",numPaginas:800}
+    naruto:{nome:"Naruto", autor:'Masashi Kishimoto',numPaginas:900,editora:'Bandai'},
+    dragonBall:{nome:"DragonBall",autor:"Akira Toriama",numPaginas:1200,editora:'Toei Animation'},
+    samuraiX:{nome:"Rurouni Kenshin(SamuraiX)",autor:"Nobuhiro Watsuki",numPaginas:800,editora:'Bandai'}
              }
   
     if (bookName == "Naruto"||bookName=="naruto"){
@@ -70,6 +70,34 @@ function book(bookName){
   }else{
     return livro;
   }
+  if(bookName=='NarutoPg'){
+    return 'O livro '+livro.naruto.nome+' tem '+livro.naruto.numPaginas+' páginas!';
+  }
+   if(bookName=='dragonBallPg'){
+    return 'O livro '+livro.dragonBall.nome+' tem '+livro.dragonBall.numPaginas+' páginas!';
+  }
+   if(bookName=='SamuraiPg'){
+    return 'O livro '+livro.samuraiX.nome+' tem '+livro.samuraiX.numPaginas+' páginas!';
+  }
+   if(bookName=='NarutoAutor'){
+    return 'O livro '+livro.naruto.nome+' tem '+livro.naruto.autor+' páginas!';
+  }
+   if(bookName=='dragonBallAutor'){
+    return 'O livro '+livro.dragonBall.nome+' tem '+livro.dragonBall.autor+' páginas!';
+  }
+   if(bookName=='SamuraiAutor'){
+    return 'O livro '+livro.samuraiX.nome+' tem '+livro.samuraiX.autor+' páginas!';
+  }
+    if(bookName=='NarutoEditora'){
+    return 'O livro '+livro.naruto.nome+' tem '+livro.naruto.editora+' páginas!';
+  }
+   if(bookName=='dragonBallEditora'){
+    return 'O livro '+livro.dragonBall.nome+' tem '+livro.dragonBall.editora+' páginas!';
+  }
+   if(bookName=='SamuraiEditora'){
+    return 'O livro '+livro.samuraiX.nome+' tem '+livro.samuraiX.editora+' páginas!';
+  }
+  
 }
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
@@ -81,18 +109,18 @@ Ainda com a função acima, imprima a quantidade de páginas de um livro qualque
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-// ?
+book('NarutoPg');
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-// ?
+book('NarutoAutor');
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-// ?
+book('NarutoEditora');
