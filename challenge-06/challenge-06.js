@@ -86,9 +86,60 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     a frase:
     "Não temos o equivalente hexadecimal para [COR]."
 */
-// ?
+ function convertToHex(cor){
+... var color = {
+..... Blue:{ nome:'Blue', hex:'#0000FF'},
+..... Cyan:{ nome:'Cyan' , hex:'#00FFFF'},
+..... Green:{nome:'Green', hex:'#008000'},
+..... Goldenrod:{nome:'Goldenrod',hex:'#DAA520'},
+..... Indigo:{nome:'Indigo',hex:'#4B0082'}
+..... };
+... switch(cor){
+..... case 'Blue':
+..... console.log('O hexadecimal para a cor'+color.Blue.nome+" é "+color.Blue.hex);
+..... break;
+..... case 'Cyan':
+..... console.log('O hexadecimal para a cor'+color.Cyan.nome+" é "+color.Cyan.hex);
+..... break;
+..... case 'Green':
+..... console.log('O hexadecimal para a cor'+color.Green.nome+" é "+color.Green.hex);
+..... break;
+..... case 'Goldenrod':
+..... console.log('O hexadecimal para a cor'+color.Goldenrod.nome+" é "+color.Goldenrod.hex);
+..... break;
+..... case 'Indigo':
+..... console.log('O hexadecimal para a cor'+color.Indigo.nome+" é "+color.Indigo.hex);
+..... break;
+..... default:
+..... console.log('Não temos o equivalente hexadecimal para '+cor);
+..... break;
+..... }
+... }
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
-*/
-// ?
+*/> 
+convertToHex('Blue');
+//O hexadecimal para a corBlue é #0000FF
+
+convertToHex('Red');
+//Não temos o equivalente hexadecimal para Red
+
+convertToHex('Cyan');
+//O hexadecimal para a corCyan é #00FFFF
+
+convertToHex('Indigo');
+//O hexadecimal para a corIndigo é #4B0082
+
+convertToHex('Gold');
+//Não temos o equivalente hexadecimal para Gold
+
+convertToHex('Goldenrod');
+//O hexadecimal para a corGoldenrod é #DAA520
+
+convertToHex('Rosa');
+//Não temos o equivalente hexadecimal para Rosa
+
+convertToHex('Tomato');
+//Não temos o equivalente hexadecimal para Tomato
+
