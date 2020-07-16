@@ -1,7 +1,7 @@
 /*
 Crie um array com 5 items (tipos variados).
 */
-// ?
+var arr = ['Homero',1,{bola:'red'},function(){},undefined];
 
 /*
 Crie uma função chamada `addItem`, que irá adicionar itens no array criado.
