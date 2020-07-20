@@ -69,7 +69,7 @@ Só vamos mudar o range:
  }
 
 
-var num = 100;
+var num = 111;
  for(num>=111;num<=125;num++){
  num % 2 !== 0 ? console.log('Números ímpares entre 111 e 125: '+num):'';
  }
