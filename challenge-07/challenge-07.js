@@ -17,7 +17,7 @@ itens de tipos diferentes, mostrando o resultado no console.
 */
 arr2=['Dia',40,true];
 addItem(arr2);
-
+console.log(arr);
 /*
 Mostre no console o segundo elemento desse último array, criado acima, com a
 frase:
