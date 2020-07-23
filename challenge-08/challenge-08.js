@@ -53,7 +53,32 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
   - Se o operador não for válido, retornar a frase:
   "Operação inválida."
 */
-
+function calculator(om){
+  return function MathOp(num1,num2){
+    switch(om){
+      case '+':
+         return num1+num2;
+        console.log('Resultado da operação: '+num1+om+num2+' = '+MathOp();
+        break;
+      case '-':
+        return num1-num2;
+        break;
+      case '*':
+         return num1*num2;
+        break;
+      case '/':
+        return num1/num2;
+        break;
+      case '%':
+      return num1%num2;
+      break;
+      default:
+      console.log('Operação inválida');
+        break;
+    }
+  };
+}
+         
 
 /*
 Declare uma variável chamada `sum`, que receberá a função acima, passando como
