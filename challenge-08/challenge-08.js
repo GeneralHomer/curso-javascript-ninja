@@ -57,20 +57,19 @@ function calculator(om){
   return function MathOp(num1,num2){
     switch(om){
       case '+':
-         return num1+num2;
-        console.log('Resultado da operação: '+num1+om+num2+' = '+MathOp();
+        console.log('Resultado da operação: '+num1+om+num2+' = '+(num1+num2);
         break;
       case '-':
-        return num1-num2;
+        console.log('Resultado da operação: '+num1+om+num2+' = '+(num1-num2);
         break;
       case '*':
-         return num1*num2;
+        console.log('Resultado da operação: '+num1+om+num2+' = '+(num1*num2);
         break;
       case '/':
-        return num1/num2;
+        console.log('Resultado da operação: '+num1+om+num2+' = '+(num1/num2);
         break;
       case '%':
-      return num1%num2;
+      console.log('Resultado da operação: '+num1+om+num2+' = '+(num1%num2);
       break;
       default:
       console.log('Operação inválida');
@@ -84,7 +83,7 @@ function calculator(om){
 Declare uma variável chamada `sum`, que receberá a função acima, passando como
 parâmetro o operador de soma.
 */
-// ?
+var sum = calculator();
 
 /*
 Agora `sum` é uma função. Mostre no console a soma de dois números, usando ela.
